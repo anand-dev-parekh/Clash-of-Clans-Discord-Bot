@@ -5,8 +5,7 @@ from discord.ext import commands
 
 headers = {
     "Accept": "application/json",
-    "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjkxZTkwZjk0LTYwMTYtNGJhZC04YjcwLTM0OTlkNjc3NzI3NiIsImlhdCI6MTYyNzQ1MDgyNiwic3ViIjoiZGV2ZWxvcGVyLzU2NGIwYzI4LTk3ODQtMTRkZC1iNWRjLTk2NGRhOWZhMzY4MSIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjE3My4xOC41OC4xMjYiXSwidHlwZSI6ImNsaWVudCJ9XX0.-rsPkHoWxrFaMCD1NDBDABLWz8ftmIW-QwJz71xwNwtcRSRhFaBSvBuJL6NBTURmnNypxk0hwq7Y-B0w_4648w"
-    }
+    "authorization": "Bearer key"
 
 
 
@@ -80,4 +79,4 @@ async def sendRequest(tag):
 
 
 
-client.run("ODY5ODI4OTQ0OTYxMTA1OTkx.YQD5VQ.UEbB6hSFoaTkkVxCkmZO6WENByY")
+client.run("token")
