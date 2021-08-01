@@ -47,6 +47,6 @@ IMPORTANT: The optionalTag will only be optional if they have set their clan tag
       
       Command = .clanwar {optionalTag}
       IMPORTANT: Only will work if clan's war log is public
-      Description = Displays stats about the clan war. If the clan is in preparation, war, or not in war. If the clan is in war, it will display the score, and                       the attacks left for each member in the clan.
+      Description = Displays stats about the clan war. If the clan is in preparation, war, or not in war. If the clan is in war, it will display the score, and the attacks left for each member in the clan.
   
   
