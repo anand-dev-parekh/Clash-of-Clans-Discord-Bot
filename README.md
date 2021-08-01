@@ -39,6 +39,7 @@ IMPORTANT: The optionalTag will only be optional if they have set their player t
       Description = Displays statistics about the discord user's builder troops
       
 Clan Commands: 
+
 IMPORTANT: The optionalTag will only be optional if they have set their clan tag in the Bot Setup above. Or if the user would like to check the stats of a different clan they will have to write in the other clan's tag.
       
       Command = .clanprofile {optionalTag}
