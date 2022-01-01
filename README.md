@@ -33,17 +33,23 @@ IMPORTANT: The optionalTag will only be optional if they have set their player t
       Description = Displays statistics about the discord user's builder profile.
       
       Command = .hometroops {optionalTag}
-      Description = Displays statistics about the discord user's home troops
+      Description = Displays statistics about the discord user's home troops.
       
       Command = .buildertroops {optionalTag}
-      Description = Displays statistics about the discord user's builder troops
+      Description = Displays statistics about the discord user's builder troops.
+      
+      Command = .spells {optionalTag}
+      Description = Displays statistics about the discord user's spells.
+      
+      Command = .heroes {optionalTag}
+      Description = Displays statistics about the discord user's heroes.
       
 Clan Commands: 
 
 IMPORTANT: The optionalTag will only be optional if they have set their clan tag in the Bot Setup above. Or if the user would like to check the stats of a different clan they will have to write in the other clan's tag.
       
       Command = .clanprofile {optionalTag}
-      Description = Displays statistics about the clan's profile
+      Description = Displays statistics about the clan's profile.
       
       Command = .clanwar {optionalTag}
       IMPORTANT: Only will work if clan's war log is public
