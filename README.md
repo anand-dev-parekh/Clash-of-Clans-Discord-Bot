@@ -6,7 +6,7 @@ This is different to the popular ClashofStats bot as it allows the user to set t
 
 
 ## Important
-Once upon a time I hosted this discord bot, however, now I am not. If you would like to clone this repo and host your this discord bot here are the instructions:
+Once upon a time I hosted this discord bot, however, now I am not. If you would like to clone this repo and host this discord bot here are the instructions:
 1) Create a mongoDB cluster
 2) Create a Database and Collection in that cluster named "Clash" and "mongoData" respectively
 3) Get the connection_string by usings mongoDB python driver example
