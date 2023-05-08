@@ -2,21 +2,23 @@ import requests
 import discord
 from discord.ext import commands
 import pymongo
-import urllib.parse
+from config import connection_string, discord_token, bearer_key
 
 
-password = urllib.parse.quote_plus("mypassword")
-cluster = pymongo.MongoClient(f"mongodb+srv://Onion8:{password}@cluster0.tbrc1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+cluster = pymongo.MongoClient(connection_string)
 db = cluster["Clash"]
 collection = db["mongoData"]
 
 
-client = commands.Bot(command_prefix = ".")
+intents = discord.Intents.default()
+intents.message_content = True
+
+client = commands.Bot(command_prefix = ".", intents=intents)
 
 headers = {
     "Accept": "application/json",
-    "authorization": "Bearer key"
-    }
+    "authorization": "Bearer " + bearer_key 
+}
 
 
 @client.event
@@ -26,7 +28,6 @@ async def on_ready():
 
 @client.command()
 async def clashBotHelp(ctx):
-
     await ctx.send("https://github.com/Onion38/Clash-of-Clans-Discord-Bot")
 
 
@@ -153,7 +154,6 @@ async def homeprofile(ctx, tag=None):
 
     data = await sendPlayerRequest(tag, ctx.author.id)
 
-
     em = discord.Embed(title=f"{data['name']}'s General Home Stats", color= discord.Color.purple())
     em.set_thumbnail(url=data["clan"]["badgeUrls"]["small"])
     em.add_field(name="ExpLevel", value=data['expLevel'])
@@ -229,4 +229,4 @@ async def sendPlayerRequest(tag, id):
 
 
 
-client.run("token")
+client.run(discord_token)
